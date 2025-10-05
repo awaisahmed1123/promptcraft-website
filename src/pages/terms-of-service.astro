@@ -1,0 +1,63 @@
+---
+// src/pages/terms-of-service.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<MainLayout>
+  <PageHeader 
+    title="Terms of Service"
+    subtitle="Please read these terms and conditions carefully before using Our Service."
+  />
+
+  <div class="container page-content">
+    <section>
+      <h2>Acceptance of Terms</h2>
+      <p>
+        By accessing and using PromptCraft ("the Service"), you accept and agree to be bound by the terms and provision of this agreement.
+      </p>
+    </section>
+
+    <section>
+      <h2>Use of Our Service</h2>
+      <p>
+        The prompts provided on this website are for personal and commercial use. You are free to copy, use, and modify them for your own projects. However, you are not permitted to replicate this website or resell the prompts as a collection.
+      </p>
+    </section>
+
+    <section>
+      <h2>Limitation of Liability</h2>
+      <p>
+        The Service is provided on an "as is" basis. PromptCraft makes no warranties, and hereby disclaims and negates all other warranties. In no event shall PromptCraft be liable for any damages arising out of the use or inability to use the materials on the website.
+      </p>
+    </section>
+  </div>
+</MainLayout>
+
+<style>
+  /* Reusing the same style again for consistency */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .page-content {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  .page-content section {
+    margin-bottom: 3rem;
+  }
+  .page-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #FFBF00;
+    padding-left: 1rem;
+  }
+  .page-content p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+</style>

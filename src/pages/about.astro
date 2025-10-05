@@ -1,0 +1,63 @@
+---
+// src/pages/about.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<MainLayout>
+  <PageHeader 
+    title="About PromptCraft"
+    subtitle="Our mission is to empower creativity by making AI art accessible to everyone."
+  />
+
+  <div class="container page-content">
+    <section>
+      <h2>Our Vision</h2>
+      <p>
+        In the rapidly evolving world of artificial intelligence, the ability to craft the perfect prompt is the key to unlocking incredible visual art. PromptCraft was born from a simple idea: to create a curated, high-quality library of prompts that artists, designers, and enthusiasts can use to bring their visions to life without guesswork.
+      </p>
+      <p>
+        We believe that everyone has a creative spark. Our goal is to provide the tools and inspiration needed to turn that spark into a masterpiece.
+      </p>
+    </section>
+
+    <section>
+      <h2>What We Offer</h2>
+      <p>
+        At PromptCraft, you'll find a diverse collection of prompts meticulously categorized for your convenience. From realistic portraits and fantastical landscapes to professional product mockups, our library is constantly growing. Each prompt is designed to be a starting point for your creative journey.
+      </p>
+    </section>
+  </div>
+
+</MainLayout>
+
+<style>
+  .container {
+    max-width: 800px; /* Text pages look better with a narrower width */
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .page-content {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-content section {
+    margin-bottom: 3rem;
+  }
+
+  .page-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #FFBF00;
+    padding-left: 1rem;
+  }
+
+  .page-content p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+// src/components/HeroSection.astro
+---
+<section class="hero">
+  <div class="container hero-container">
+
+    <div class="hero-text">
+      <div class="ai-tag">🤖 AI Generation</div>
+      <h1>Unlock the Power of AI Imagery</h1>
+      <p class="subtitle">
+        Discover professionally crafted prompts to generate stunning, high-quality images with AI.
+      </p>
+      <a href="/prompts" class="cta-button">Explore Prompts</a>
+    </div>
+
+    <div class="hero-image-container">
+      <img src="/images/hero-image.jpeg" alt="AI Generated Artwork" />
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ... yahan aapke purane saare styles mojood hain ... */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .hero { padding: 5rem 0; }
+  .hero-container { display: flex; align-items: center; justify-content: space-between; gap: 4rem; }
+  .hero-text { flex: 1; }
+  .ai-tag { display: inline-block; font-size: 0.9rem; font-weight: 700; color: #EAEAEA; margin-bottom: 2rem; padding: 0.6rem 1.2rem; border-radius: 50px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .hero-text h1 { font-size: 3.8rem; margin-bottom: 1.5rem; line-height: 1.2; }
+  .subtitle { font-size: 1.2rem; color: #b3b3b3; margin-bottom: 2.5rem; max-width: 500px; }
+  .cta-button { display: inline-block; background-color: #FFBF00; color: #121212; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; text-decoration: none; padding: 1rem 2.5rem; border-radius: 50px; transition: all 0.3s ease; }
+  .cta-button:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); }
+  .hero-image-container { flex: 1; height: 450px; border-radius: 12px; overflow: hidden; border: 1px solid #333; background-color: #191919; }
+  .hero-image-container img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* --- Mobile Styles --- */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 0;
+    }
+    .hero-container {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 3rem;
+    }
+    .hero-text {
+      text-align: center;
+      padding-right: 0;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem; /* Smaller font for mobile */
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .hero-image-container {
+      width: 100%;
+      height: 350px;
+    }
+  }
+</style>

@@ -1,0 +1,147 @@
+---
+// src/components/PromptCard.astro
+export interface Props {
+  imgSrc: string;
+  prompt: string;
+}
+
+const { imgSrc, prompt } = Astro.props;
+---
+
+<div class="card">
+  <div class="card-image-container">
+    <img src={imgSrc} alt="AI Generated Image" loading="lazy" />
+  </div>
+  <div class="card-content">
+    <div class="prompt-tag">🤖 AI Generated</div>
+    <p class="prompt-text">{prompt}</p>
+    <div class="card-buttons">
+      <button class="copy-btn">Copy</button>
+      <a href="https://gemini.google.com/" target="_blank" class="gemini-btn">Gemini</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  }
+  .card-image-container {
+    height: 300px;
+    background-color: #111; /* Background for letterboxing */
+  }
+  .card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* IMPORTANT: This shows the full image */
+  }
+  .card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .prompt-tag {
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .prompt-text {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    height: 120px; /* Fixed height */
+    overflow: auto;
+    margin-bottom: 1.5rem;
+    padding-right: 10px; /* Space for scrollbar */
+    flex-grow: 1;
+  }
+
+  /* --- VVIP Custom Scrollbar --- */
+  .prompt-text::-webkit-scrollbar {
+    width: 8px;
+  }
+  .prompt-text::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 10px;
+  }
+  .prompt-text::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 2px solid #2a2a2a;
+  }
+  .prompt-text::-webkit-scrollbar-thumb:hover {
+    background-color: #FFBF00;
+  }
+
+  .card-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  /* --- VVIP Button Redesign --- */
+  .copy-btn, .gemini-btn {
+    width: 100%;
+    padding: 0.7rem 1rem; /* Less padding */
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  .copy-btn {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+  }
+  .copy-btn:hover {
+    background-color: #444;
+    border-color: #777;
+  }
+  .gemini-btn {
+    background-color: #FFBF00;
+    border-color: #FFBF00;
+    color: #121212;
+  }
+  .gemini-btn:hover {
+    background-color: #ffd040;
+    border-color: #ffd040;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+      const cardContent = (event.target as HTMLElement).closest('.card-content');
+      if (cardContent) {
+        const promptText = cardContent.querySelector('.prompt-text')?.textContent;
+        if (promptText) {
+          navigator.clipboard.writeText(promptText).then(() => {
+            (event.target as HTMLElement).textContent = 'Copied!';
+            setTimeout(() => {
+              (event.target as HTMLElement).textContent = 'Copy';
+            }, 2000);
+          }).catch(err => {
+            console.error('Failed to copy: ', err);
+          });
+        }
+      }
+    });
+  });
+</script>

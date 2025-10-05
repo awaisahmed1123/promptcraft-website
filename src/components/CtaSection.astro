@@ -1,0 +1,84 @@
+---
+// src/components/CtaSection.astro
+import { WHATSAPP_LINK } from '../data/constants.js';
+---
+<section class="cta-section" id="premium-cta">
+  <div class="container">
+    <div class="cta-content">
+      <div class="tag">Go Premium</div>
+      <h2>Ready to Create Magic?</h2>
+      <p>
+        Get our complete library of 100+ professionally crafted prompts and unlock your creative potential today.
+      </p>
+      <a href={WHATSAPP_LINK} target="_blank" class="cta-button">
+        Buy on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .cta-section {
+    padding: 5rem 0;
+    border-top: 1px solid #2a2a2a;
+  }
+  .cta-content {
+    background: radial-gradient(ellipse at bottom, rgba(255, 191, 0, 0.1), #121212 70%);
+    padding: 5rem 3rem;
+    border-radius: 16px;
+    border: 1px solid #2a2a2a;
+    text-align: center;
+    overflow: hidden;
+  }
+  .tag {
+    display: inline-block;
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .cta-content p {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    max-width: 550px;
+    margin: 0 auto 2.5rem auto;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #FFBF00;
+    color: #121212;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 191, 0, 0.15);
+  }
+  .cta-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 191, 0, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .cta-content {
+      padding: 3rem 1.5rem;
+    }
+    .cta-content h2 {
+      font-size: 2.2rem;
+    }
+  }
+</style>

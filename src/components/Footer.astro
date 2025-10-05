@@ -1,0 +1,98 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+---
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">PromptCraft</a>
+        <p class="tagline">Crafting the Future of AI Imagery.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {currentYear} PromptCraft. All Rights Reserved.</p>
+      <p class="built-with">Built with ❤️ in Karachi</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* --- Desktop Styles --- */
+  footer {
+    background-color: #121212;
+    border-top: 1px solid #2a2a2a;
+    padding: 3rem 0 2rem 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .footer-logo {
+    color: #FFBF00;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  .tagline {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+  }
+  .footer-nav a {
+    color: #EAEAEA;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  .footer-nav a:hover {
+    color: #FFBF00;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright, .built-with {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+  }
+
+  /* --- Mobile Styles --- */
+  @media (max-width: 768px) {
+    .footer-main, .footer-bottom {
+      flex-direction: column; /* Stack vertically */
+      align-items: center;   /* THIS FIXES IT: Centers all items */
+      text-align: center;      /* Centers the text inside each item */
+      gap: 1.5rem;
+    }
+    .footer-nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+</style>

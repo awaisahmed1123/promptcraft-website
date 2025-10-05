@@ -1,0 +1,64 @@
+---
+// src/pages/privacy-policy.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<MainLayout>
+  <PageHeader 
+    title="Privacy Policy"
+    subtitle="Your privacy is critically important to us."
+  />
+
+  <div class="container page-content">
+    <section>
+      <h2>Information We Collect</h2>
+      <p>
+        Currently, PromptCraft does not collect any personal data from its users. You can browse and use the site anonymously. We do not require you to create an account or provide any personal information like your name or email address.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cookies</h2>
+      <p>
+        We do not use cookies for tracking purposes. The website is static and designed to provide information without collecting data about your browsing habits.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+      </p>
+    </section>
+
+      </div>
+</MainLayout>
+
+<style>
+  /* We are reusing the same style as the about page */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .page-content {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  .page-content section {
+    margin-bottom: 3rem;
+  }
+  .page-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #FFBF00;
+    padding-left: 1rem;
+  }
+  .page-content p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+</style>

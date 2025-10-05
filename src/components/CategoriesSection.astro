@@ -1,0 +1,64 @@
+---
+// src/components/CategoriesSection.astro
+const categories = [
+  { name: 'Men', icon: '👨', href: '/prompts' },
+  { name: 'Women', icon: '👩', href: '/prompts' },
+  { name: 'Kids', icon: '👶', href: '/prompts' },
+  { name: 'Couples', icon: '💑', href: '/prompts' },
+  { name: 'Other', icon: '🎨', href: '/prompts' },
+];
+---
+
+<section class="categories-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse by Category</h2>
+      <p>Find the perfect prompt from our curated categories.</p>
+    </div>
+    <div class="category-grid">
+      {categories.map(category => (
+        <a href={category.href} class="category-card">
+          <div class="icon">{category.icon}</div>
+          <h3>{category.name}</h3>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .categories-section {
+    padding: 5rem 0;
+    border-top: 1px solid #2a2a2a;
+  }
+  .section-header { text-align: center; margin-bottom: 3rem; }
+  .section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+  .section-header p { font-size: 1.1rem; color: #b3b3b3; }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .category-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .category-card:hover {
+    transform: translateY(-5px);
+    border-color: #FFBF00;
+    box-shadow: 0 8px 25px rgba(255, 191, 0, 0.1);
+  }
+  .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+  .category-card h3 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+</style>

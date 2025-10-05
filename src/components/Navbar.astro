@@ -1,0 +1,112 @@
+---
+// src/components/Navbar.astro
+---
+<header>
+  <nav>
+    <div class="logo">
+      <a href="/">PromptCraft</a>
+    </div>
+    <button class="hamburger" aria-label="Open navigation menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/prompts">Prompts</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/#premium-cta" class="premium-btn">Get Premium</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header { background-color: #121212; border-bottom: 1px solid #2a2a2a; padding: 1.5rem 2rem; position: sticky; top: 0; z-index: 1000; }
+  nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+  .logo a { color: #FFBF00; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; margin: 0; padding: 0; }
+  .nav-links a { color: #EAEAEA; text-decoration: none; font-size: 1rem; font-weight: 700; transition: color 0.3s ease; }
+  .nav-links a:not(.premium-btn):hover { color: #FFBF00; }
+  .hamburger { display: none; }
+
+  .premium-btn {
+    background-color: transparent;
+    color: #FFBF00;
+    border: 1px solid #FFBF00;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .premium-btn:hover {
+    background-color: #FFBF00;
+    color: #121212;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 191, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute; top: 100%; right: 0; background-color: #1e1e1e;
+      width: 100%; border-top: 1px solid #2a2a2a;
+      display: flex; flex-direction: column; text-align: center; padding: 1rem 0;
+      opacity: 0; visibility: hidden;
+      transform: translateY(-1rem);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+    .nav-links.active {
+      opacity: 1; visibility: visible; transform: translateY(0);
+    }
+    .nav-links li {
+      width: 100%;
+      padding: 0.75rem 0; 
+    }
+    .nav-links .premium-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .hamburger {
+      display: flex; flex-direction: column; justify-content: space-around;
+      width: 30px; height: 25px; cursor: pointer; background: transparent;
+      border: none; padding: 0; z-index: 1001;
+    }
+    .line {
+      display: block; width: 100%; height: 3px; background-color: #fff;
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+    .hamburger.active .line:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .line:nth-child(2) { opacity: 0; }
+    .hamburger.active .line:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  }
+</style>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const closeMenu = () => {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.removeEventListener('click', handleDocumentClick);
+  };
+  const handleDocumentClick = (event) => {
+    if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+      closeMenu();
+    }
+  };
+  hamburger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isActive = navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    if (isActive) {
+      document.addEventListener('click', handleDocumentClick);
+    } else {
+      document.removeEventListener('click', handleDocumentClick);
+    }
+  });
+  navLinks.addEventListener('click', () => {
+    closeMenu();
+  });
+</script>

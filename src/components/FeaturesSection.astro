@@ -1,0 +1,58 @@
+---
+// src/components/FeaturesSection.astro
+---
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Choose PromptCraft?</h2>
+      <p>We provide the tools and inspiration to turn your ideas into masterpieces.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">💎</div>
+        <h3>Curated Quality</h3>
+        <p>Every prompt is tested and curated by our team to ensure high-quality, consistent results.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📋</div>
+        <h3>Easy to Use</h3>
+        <p>A clean interface with one-click copy functionality gets you from browsing to creating in seconds.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌐</div>
+        <h3>Diverse Range</h3>
+        <p>From photorealism to fantasy art, our ever-growing library covers a wide spectrum of styles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .features-section { padding: 5rem 0; }
+  .section-header { text-align: center; margin-bottom: 3rem; }
+  .section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+  .section-header p { font-size: 1.1rem; color: #b3b3b3; }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .feature-card {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  .icon { font-size: 2rem; margin-bottom: 1.5rem; color: #FFBF00; }
+  .feature-card h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .feature-card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+  }
+</style>
