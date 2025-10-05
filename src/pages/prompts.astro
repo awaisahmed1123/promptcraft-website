@@ -22,11 +22,12 @@ import { allPrompts } from '../data/prompts.js';
     </div>
 
     <div class="prompts-grid">
-      {allPrompts.map(p => (
+      {[...allPrompts].reverse().map(p => (
         <div class="prompt-card-wrapper" data-category={p.category}>
           <PromptCard 
             imgSrc={p.imgSrc}
             prompt={p.prompt}
+            createdAt={p.createdAt}
           />
         </div>
       ))}
@@ -51,7 +52,7 @@ import { allPrompts } from '../data/prompts.js';
   .filter-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 3rem;
   }
@@ -79,7 +80,6 @@ import { allPrompts } from '../data/prompts.js';
 
   .prompts-grid {
     display: grid;
-    /* This line makes the grid responsive automatically */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     padding-bottom: 5rem;
@@ -91,22 +91,16 @@ import { allPrompts } from '../data/prompts.js';
 </style>
 
 <script>
-  // Get all filter buttons
   const filterButtons = document.querySelectorAll('.filter-btn');
-  // Get all prompt cards
   const promptCards = document.querySelectorAll('.prompt-card-wrapper');
 
-  // Add a click event listener to each button
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Get the category from the clicked button
       const category = button.getAttribute('data-category');
 
-      // Update active state on buttons
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
 
-      // Loop through all cards and show/hide them
       promptCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
         
