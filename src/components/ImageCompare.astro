@@ -1,0 +1,49 @@
+---
+// src/components/ImageCompare.astro
+export interface Props {
+  beforeSrc: string;
+  afterSrc: string;
+}
+const { beforeSrc, afterSrc } = Astro.props;
+---
+
+<div class="image-compare-grid">
+  <div class="image-wrapper">
+    <h4>Before</h4>
+    <img src={beforeSrc} alt="Before image" />
+  </div>
+  <div class="image-wrapper">
+    <h4>After</h4>
+    <img src={afterSrc} alt="After AI generated image" />
+  </div>
+</div>
+
+<style>
+  .image-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .image-wrapper {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #1e1e1e;
+  }
+  .image-wrapper h4 {
+    text-align: center;
+    color: #888;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .image-wrapper img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  @media (max-width: 600px) {
+    .image-compare-grid {
+      grid-template-columns: 1fr; /* Stack on mobile */
+    }
+  }
+</style>
