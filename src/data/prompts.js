@@ -364,5 +364,75 @@ export const allPrompts = [
     prompt: "A captivating young woman with long, flowing dark hair and a delicate flower crown, dressed in an ethereal, off-the-shoulder cream-colored dress. She is seated gracefully on the forest floor, leaning against the mossy base of a large tree. Beside her is a woven basket overflowing with vibrant pink, orange, and yellow daisies and other wildflowers. The sunlight filters softly through the trees, creating a serene and magical woodland atmosphere. The overall mood is whimsical and enchanting, use the provided references with 100% accuracy.",
     category: "Women",
     createdAt: "2025-10-06"
+  },
+  {
+    id: 53,
+    imgSrc: "/images/prompt-56.jpeg",
+    prompt: "Reference photo) in a dynamic full-body pose. The subject wears casual relaxed outfits in bold colors (shirt, pants, shoes), appearing stylish and modern.Add a single text 'Noman displayed vertically, rendered as large 3D block glossy letters in a bold contrasting color. The text should appear only once, without repetition, and be big enough to look like a real object. Make the model interact with the text, for example sitting on, No face change 100 percent original And background name 100 percent clear show no spelling mistake.",
+    category: "Men",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 54,
+    imgSrc: "/images/prompt-57.jpeg",
+    prompt: "A double exposure composition in black and white. In the foreground, a young man with short dark hair (like the man in this photo —realistic) is standing with his back to the camera, his head turned to the left, gazing at the horizon. He is wearing a black blazer and pants ensemble, and is standing on a rock in a body of water (sea, lagoon, or lake). Continuation: In the background, in an overlapping and translucent silhouette, the profile of the same man's face appears with his eyes closed.",
+    category: "Men",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 55,
+    imgSrc: "/images/prompt-58.jpeg",
+    prompt: "8k Ultra-realistic Dramatic studio portrait of a me messy hair over the eye (from uploaded image), centered, facing the camera with an intense stare. High-contrast, cinematic lighting wide angle. A single, intense horizontal band of vivid red light illuminates only the eyes and bridge of the nose; the rest of the subject and hair are plunged into deep, pure shadow/silhouette. Plain, smooth mid-tone gray background. Moody, minimalist, ominous aesthetic. wearing a black turtleneck.",
+    category: "Men",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 56,
+    imgSrc: "/images/prompt-59.jpeg",
+    prompt: "A high-fashion editorial portrait, 8K cinematic hyper-detailed ultra-realistic photograph, Masterpiece quality, high contrast, trending on Vogue cover, sophisticated, cinematic quality, professional photoshoot. A captivating young man, (Character Reference: [ID/Seed Here]), with messy, artfully disheveled hair draped slightly over one eye, embodying quiet confidence, the pose is casual, lounging effortlessly on a plush, midnight-blue velvet sofa, shot in a minimalist, modern studio environment. Wearing an open, loose-fitting Italian silk ivory shirt, multiple delicate layered gold necklaces rest on the collarbone, paired with impeccably tailored cream-colored trousers, elegant and minimal styling, Soft, voluminous golden hour light (volumetric lighting), emphasizing texture and skin tone, strong rim lighting outlining the subject's form, extremely shallow depth of field (DOF), focusing sharply on the subject, the background features a dramatically blurred chandelier (large, luminous bokeh glow).",
+    category: "Men",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 57,
+    imgSrc: "/images/prompt-60.jpeg",
+    prompt: "A young Pakistani man, with a neat mustache, stands confidently in a well-lit, luxurious office setting. He is wearing a traditional black shalwar kameez and a white, intricately patterned shawl draped over his shoulders. His pose is relaxed but distinguished, with his hands clasped casually in front of him. In the background, instead of the original text, 'Noman Hassan' is written in elegant gold letters on a white marble wall. Below it, in place of the lion emblem, is a majestic golden depiction of a Markhor. Flanking the Markhor are two prominent Pakistani flags. The overall ambiance is formal and distinguished, highlighting Pakistani culture and heritage.",
+    category: "Men",
+    createdAt: "2025-10-07"
+  },
+  {
+    id: 58,
+    imgSrc: "/images/prompt-61.jpeg",
+    prompt: "A humorous, photorealistic portrait of a man with curly hair wearing a blue sleeveless shirt. A gray cat sits on his shoulder and playfully covers the man's eyes with its paws.The cat is winking and sticking out its tongue mischievously. Black background, ultra-sharp details, studio lighting, funny scene.",
+    category: "Men",
+    createdAt: "2025-10-07"
+  },
+  {
+    id: 59,
+    imgSrc: "/images/prompt-62.jpeg",
+    prompt: "8K ultra-detailed, hyper-realistic cinematic portrait photography. A stylish young man, 26 years old, 5'6 in height. Facial consistency is crucial: The face must retain photorealistic consistency and intricate details. He is wearing a crisp, clean white button-up shirt (sleeves perfectly rolled to the forearms) and matching white trousers, with a black wristwatch on his left wrist. He is holding a transparent umbrella with a black handle and black frame, naturally raised above him. Pose is aesthetic and relaxed: Both hands lightly holding the umbrella handle near the chest, head tilted slightly upward, gazing thoughtfully to the side. Expression is calm and peaceful. Standing in a lush, vibrant green grass field during day-time. Background featuring softly blurred green bushes and trees (shallow depth of field). Lighting is dramatic, enhanced natural daylight, soft, diffused main light to create a serene yet vivid atmosphere with subtle rim light. Composition: Wide shot, full subject visible from head to waist. Absolutely no cropping on the subject. Color Grading Vibrant and Enhanced saturation, high dynamic range, rich color palette. Shot on a high-end prime lens (e.g., 85mm), detailed skin texture, film grain, volumetric lighting, masterpiece, award-winning photo, highly detailed. Aspect Ratio 4:5",
+    category: "Men",
+    createdAt: "2025-10-07"
+  },
+  {
+    id: 60,
+    imgSrc: "/images/prompt-63.jpeg",
+    prompt: "A surreal black and white cinematic portrait of a man (same as reference photo) wearing headphones, eyes closed, lost in music. He is standing in a dimly lit room with a stack of books on a table beside him. Papers and books float around in mid-air, creating a dreamy motion blur effect. The lighting is dramatic, soft glow on his face, highlighting his relaxed expression. His shirt is loose and open, adding to the moody artistic vibe.",
+    category: "Men",
+    createdAt: "2025-10-07"
+  },
+  {
+    id: 61,
+    imgSrc: "/images/prompt-64.jpeg",
+    prompt: "A cinematic portrait of a stylish young boy leaning casually on a terrace railing at sunset(use reference photo), wearing a deep black corduroy shirt with rolled-up sleeves, beige cargo pants, sunglasses, and a black G-Shock watch. He gazes to the side with confidence, bathed in warm golden light. In the background, misty mountains and a pastel-colored sky fade into the horizon, creating a dreamy, cinematic atmosphere with different pose.",
+    category: "Men",
+    createdAt: "2025-10-07"
+  },
+  {
+    id: 62,
+    imgSrc: "/images/prompt-65.jpeg",
+    prompt: "20-year-old man on the moon, sitting on a folding, chair with coffee, wearing casual streetwear, white cap, black pants, sneakers, next to a chair with vintage coffee grinder, Earth in starry sky, hyper-realistic, cinematic, 8K, DSLR quality, keep my face exact.",
+    category: "Men",
+    createdAt: "2025-10-07"
   }
 ];
