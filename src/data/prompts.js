@@ -273,5 +273,96 @@ export const allPrompts = [
     prompt: "Photo-realistic 8K full-body portrait of this man, I'm the above image leaning casually against a clean light-grey wall.He is wearing Pakistani style salwar Qameez in Hadali style and peshawari style shoes, Sindhi Ajrak in his neck, Hands closed on belly having golden colour wrist watch in his left hand, one leg crossed over the other, relaxed, confident pose.Please 100% face accuracy of the reference image.",
     category: "Men",
     createdAt: "2025-10-06"
+  },
+  {
+    id: 40,
+    imgSrc: "/images/prompt-43.jpeg",
+    prompt: "Change this image to A high-quality studio photograph of a 10-months-old baby girl sitting on a white chair. He is wearing a smart light sky blue suit coat (pant coat style, not long coat) over a white shirt, with matching white pants and white sneakers. The coat is short, fitted, and styled like a classic blazer, not a trench or long coat. He holds a light blue rose in one hand. The background is a plain light blue with soft studio lighting and a subtle warm sunset glow behind.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 41,
+    imgSrc: "/images/prompt-44.jpeg",
+    prompt: "Using a referebce image i uploaded Create a 4K Ultra-HD self-portrait of a 2 years old baby girl. taken through the reflection of an oval mirror with a tortoisesh frame. She holds a silver Kodak camera in her left hand, while her right hand rests elegantly on her chin. Afternoon sunlight streams in through the window on the right creating dramatic shadows that highlight her face. The image has a vintage and nostalgic aesthetic.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 42,
+    imgSrc: "/images/prompt-45.jpeg",
+    prompt: "Create this reference picture into a 4k quality the image is a stylish photo of a 2 years old girl sitting in a modern car night. She has a gentle, natu smile and is posed with one hand resting on the back of her head, looking at the camera She's wearing a cream-colored full sleeves top and baggy ieans. The car's interior is dark, but she's bathed in a soft, golden light that makes it feel ling a sunset,A bouquet of yellow flowers is in the corner adding a pop of color.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 43,
+    imgSrc: "/images/prompt-46.jpeg",
+    prompt: "Create a photo of 2 years old baby girl using t reference with normal dark hair stands on a wise stairwell. Lonc hair butterflv A little disheveled. She's thin She's lips ajar. She's sitting on the stairs. She is bathed in the warm, golden light of the sein, which casts long shadows on the off-white wall behind her. She wears a white tank top with dárk blue denim iacket, and dark blue wide-leg jeaks.Don't change my features Vintage cinematic sole.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 44,
+    imgSrc: "/images/prompt-47.jpeg",
+    prompt: "A cute little boy, captured from the waist up, stands bathed in warm, soft afternoon sunlight against a clean, light-colored wall. He is dressed in an off-white or cream-colored suit, perfectly tailored for his small frame, consisting ofa jacket, collared shirt, and trousers. His short, dark hair s neatly styled. He holds a delicate bouquet of small, white flowers, possibly baby's breath, with both hands at hi chest. A gentle smile graces his face, and his dark eyes look directly at the viewer. To his left, a soft, elongated shadow is cast on the wall, adding depth and a touch of drama the composition. The lighting highlights the textures of his suit and the freshness of the flowers, creating a heartwarming and slightly formal portrait.No face change 100 percent original face.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 45,
+    imgSrc: "/images/prompt-48.jpeg",
+    prompt: "A outdoor photoshoot featuring a child sitting, wearing a clean all-white outfit including sweatshirt, jogger pants, and sneakers. He has short dark hair, light stubble, and is posing casually with one arm resting on his knee suitable background. Next to him stands a highly detailed, realistic 3D version of Sonic the Hedgehog, with vibrant blue fur, green eyes, white gloves, and red shoes. The lighting is soft and even, giving a professional portrait look. The overall mood is modern, friendly, and stylish, blending reality with a CGI character.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 46,
+    imgSrc: "/images/prompt-49.jpeg",
+    prompt: "Create a photo of a 2 years old baby girl, see the reference photo in a high-fashion studio same skin in the photo and long messy black hair. She wears a ieans crop top jacket layered over a white tube top. A loose strand of hair falls across her face adding elegance. Soft diffused lighting against a plain white background with light dimensionis. Make four pictures with her ir different poses, gazing softly at the camera with a dreamy, calm expression, smiling, candid laugh, fierce, soft smile.",
+    category: "Kids",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 47,
+    imgSrc: "/images/prompt-50.jpeg",
+    prompt: "Creat a soft, sunlit portrait of your face wearing a flowing sheer saree with delicate floral embroidery and yellow strapless blouse. She sits gracefully against a plain wall, bathed in warm natural light with a triangular patch of sunlight casting artistic Shadows. She holds a vibrant bouquet of sunflowers close to her chest, and a small white flower is tucked behind her ear. Her gentle expression, loose hair strands glow creat a serene poetic and romantic.",
+    category: "Women",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 48,
+    imgSrc: "/images/prompt-51.jpeg",
+    prompt: "Making a image. A vibrant, portrait photograph of a using 100% match my selfie face, she is looking 18 years old girl with slime hot body looks, She is sitting in a vintage, white metal full rickshaw-style prop decorated with small flowers and vines. The setting is a lush, green outdoor garden during the When the day sets, An atmosphere with charming and dimly lit lights, The bride's jewellery includes a statement choker necklace, earrings, a maang tikka (headpiece), and bangles.",
+    category: "Women",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 49,
+    imgSrc: "/images/prompt-52.jpeg",
+    prompt: "A regal vintage-style portrait of a young woman with my real face and natural features, styled as a Maharani from the royal Rajasthan era and sitting on the chair, and background is royal palace,She is wearing a richly embroidered heavy lehenga with a Full-sleeve blouse and an ornate dupatta draped over her head. The outfit is heavily detailed with intricate embroidery, paired with traditional jewelry-choker, long rani haar, maang tikka, small red bindi on her Forehead, and a large stack of colorful bangles. Her wavy curly hair.",
+    category: "Women",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 50,
+    imgSrc: "/images/prompt-53.jpeg",
+    prompt: "Ultra-realistic editorial photoshoot of a 20-year-old woman (face from the reference photo, unchanged — no alterations to her facial features, skin tone, or age).She wears a modern oversized pastel-green sweatshirt with elegant embroidered white floral patterns on the sleeves, paired with loose high-waisted beige wide-leg pants and chunky white sneakers with subtle yellow accents.The background is filled with blooming flower trees and soft greenery, giving a fresh, dreamy, and fashionable editorial atmosphere. Lighting is natural daylight with cinematic highlights, preserving authenticity and realism.",
+    category: "Women",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 51,
+    imgSrc: "/images/prompt-54.jpeg",
+    prompt: "Hyper-realistic editorial portrait of a young woman seated af a rustic outstoor café table wearing a slip cress with silky fabric in warm autumn tones. A coffee cup rests on the wooden Lable Atmosphere romantic and Lable Atmosphere romantic and seasonal with warm autumn décor, soft string light bokih, blurred rustic houses Mood tinematic, cozy, and luxuriously polished.",
+    category: "Women",
+    createdAt: "2025-10-06"
+  },
+  {
+    id: 52,
+    imgSrc: "/images/prompt-55.jpeg",
+    prompt: "A captivating young woman with long, flowing dark hair and a delicate flower crown, dressed in an ethereal, off-the-shoulder cream-colored dress. She is seated gracefully on the forest floor, leaning against the mossy base of a large tree. Beside her is a woven basket overflowing with vibrant pink, orange, and yellow daisies and other wildflowers. The sunlight filters softly through the trees, creating a serene and magical woodland atmosphere. The overall mood is whimsical and enchanting, use the provided references with 100% accuracy.",
+    category: "Women",
+    createdAt: "2025-10-06"
   }
 ];
